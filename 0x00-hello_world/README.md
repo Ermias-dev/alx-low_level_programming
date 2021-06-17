@@ -1,0 +1,1 @@
+This is my 0x00-hello_world assignment on alx-low_level_programming project.
