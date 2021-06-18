@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - main block
-* Description: Print all possible combinations of two two-digit numbers. 
+* Description: Print all possible combinations of two two-digit numbers.
 * Numbers should range from 0 to 99.
 * The two numbers should be separated by a space.
 * All numbers should be printed with two digits. 1 should be printed as 01.
