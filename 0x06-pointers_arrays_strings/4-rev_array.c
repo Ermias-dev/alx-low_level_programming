@@ -1,20 +1,18 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 6-cap_string.c -o 6-cap#include "holberton.h"
+#include "holberton.h"
 
 /**
-* reverse_array - reverse the contents of an array of integers
-* @a: array of integers
-* @n: number of elements in array
+* reverse_array - reverse an array of integers
+* @a: a pointer to an interger
+* @n: the number of elements of the array
+*
+* Return: void
 */
-
 void reverse_array(int *a, int n)
 {
-int i;
-int h;
-
-for (i = 0; i < (n / 2); i++)
+for (; --n > 0; ++a, --n)
 {
-h = a[i];
-a[i] = a[n - i - 1];
-a[n - i - 1] = h;
+*a ^= a[n];
+a[n] ^= *a;
+*a ^= a[n];
 }
 }
